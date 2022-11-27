@@ -1,0 +1,503 @@
+html {
+    height: 100%;
+}
+body {
+      min-height: 1100px;
+   margin:auto;
+       background:url(https://images.unsplash.com/photo-1518561602890-728830e35ed2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=771&q=80);
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+      }
+
+  /*LOGO*/
+#logo {
+  background-color: rgba(248, 249, 249, .4);
+}
+
+.logo {
+ display: block;
+ margin: auto;
+ top: 0%;
+ bottom: 0;
+ right: 50%;
+ left: 50%;
+ width: 235px;
+ transition: width .25s, box-shadow .25s;
+}
+
+.logo:hover {
+  width: 300px;
+ }
+
+  /*REDES*/
+div.redes {
+margin: 20px;
+height: 50px;
+background-color: rgb(247, 217, 217, .4)
+}
+
+
+div.redes div.contenedor {
+  float: left;
+padding: 7px;
+transition: all .2s ease-in-out;
+}
+
+div.redes div.contenedor:hover {
+transform: scale(1.1);
+}
+
+/*ENVÍOS GRATIS*/
+div.enviosgratis {
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin:20 auto;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  color: black;
+  float:inherit;
+width:1300px;
+height: 50px;
+}
+
+
+  /*USUARIO*/
+div.redes div.contenedor2 {
+  position: relative;
+  top: -90%;
+  right: inherit;
+  float: right;
+padding: 7px;
+transition: all .2s ease-in-out;
+}
+
+div.redes div.contenedor2:hover {
+transform: scale(1.1);
+}
+
+  /*SLOGAN*/
+div.slogan {
+  position: relative;
+  text-align: center;
+  align-items:center;
+  width: 700px;
+  margin: 0;
+  left: 26%;
+  top: 0%;
+  bottom: 0%;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  font-family: 'Dancing Script', cursive;
+  }
+
+
+/*BÚSQUEDA*/
+.cover {
+  outline: none;
+  position: relative;
+  align-items: center;
+  width: 1000px;
+  margin: 0PX;
+  left: 40%;
+  right: 40%;
+}
+
+.tb {
+  display: table;
+  width: 1000px;
+  position: relative;
+  align-items: center;
+  margin: auto;
+  margin: 0PX;
+}
+
+.td {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  width: 1000px;
+  align-items: center;
+  margin: auto;
+  margin: 0PX;
+}
+
+input,
+button {
+  color: #fff;
+  font-family: Nunito;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  width: 300px;
+}
+
+#cover {
+  position: center;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 1000px;
+  height: 50px;
+  padding: 5px;
+  margin: -83px auto 0 auto;
+  background-color: #F9D2D2 ;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #800f2f, 0 0 0 20px #ffffffeb;
+  transform: scale(0.6);
+
+}
+
+form {
+  height: 40px;
+  position: center;
+}
+
+/*TIPOGRAFIA DE BÚSQUEDA*/
+input[type="text"] {
+  width: 700px;
+  left: 10px;
+  bottom: 5px;
+  position: relative;
+  align-items: center;
+  align-content: flex;
+  height: 40%auto;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+}
+
+input[type="text"]::placeholder {
+
+  font-size: 30px;
+  color: black;
+}
+/*FIN TIPOGRAFIA DE BÚSQUEDA*/
+#s-cover {
+  width: 1px;
+  padding-left: 50px;
+}
+
+button {
+  position: relative;
+  right: 10px;
+  display: block;
+  width: 40px;
+  height: 52px;
+  cursor: pointer;
+}
+
+#s-circle {
+  position: relative;
+  align-content: flex;
+  top: -8px;
+  left: -6px;
+  right: 130px;
+  width: 20px;
+  height: 20px;
+  margin-top: 0;
+  border-width: 15px;
+  border: 15px solid black;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.5s ease all;
+}
+
+button span {
+  position: absolute;
+  top: 68px;
+  left: 43px;
+  display: block;
+  width: 45px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  transform: rotateZ(52deg);
+  transition: 0.5s ease all;
+}
+
+button span:before,
+button span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  width: 45px;
+  height: 15px;
+  background-color:black;
+  border-radius: 8px;
+  transform: rotateZ(0);
+  transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle {
+  top: -1px;
+  width: 67px;
+  height: 15px;
+  border-width: 0;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+#s-cover:hover span {
+  top: 50%;
+  left: 56px;
+  width: 25px;
+  margin-top: -9px;
+  transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before {
+  bottom: 11px;
+  transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after {
+  bottom: -11px;
+  transform: rotateZ(-52deg);
+}
+#s-cover:hover button span:before,
+#s-cover:hover button span:after {
+  right: -6px;
+  width: 40px;
+  background-color: #fff;
+}
+
+
+/*MENÚ*/
+.caja1 {
+  text-decoration-color: red;
+  position: relative;
+text-decoration: none;
+    top: 10%;
+   bottom: auto;
+   right: 50px;
+   left: 30px;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  border-radius: 10px;
+  margin: 30px;
+  width: 160px;
+  padding: 5px;
+  border:20px #C92B27;
+  display: inline-block;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  -webkit-transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+  -o-transition-property: background-color, color;
+  -o-transition-duration: 1s;
+  text-decoration: none;
+  -moz-box-shadow: 2px 2px 1px black;
+
+}
+
+.caja1:hover {
+  position: relative;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  -webkit-transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+  -o-transition-property: background-color, color;
+  -o-transition-duration: 1s;
+  background-color:#F9D2D2;
+  color:black;
+  -moz-box-shadow: 2px 2px 1px black;
+}
+.caja1 a{
+  color: black;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+
+}
+span.caja1 {
+  align-content: center;
+  align-items: center;
+  background-position: center;
+  position: relative;
+}
+  /*BANNER*/
+.banner{
+  display: inline-block;
+   position: relative;
+  width: 1200px;
+  align-content: center;
+  align-items: center;
+  background-position: center;
+margin: auto;
+  right:10%;
+  left: 10%;
+  }
+
+
+
+  /*PRODUCTOS*/
+
+  .tituloproductos{
+    position: relative;
+    text-align: center;
+    align-items:center;
+    width: 300px;
+    margin: 0;
+    top: 0%;
+    bottom: 0%;
+    right: 60%;
+    left: 40%;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: 'Dancing Script', cursive;
+    }
+.h1 {
+  text-align: left;
+  align-content: flex-start;
+  display: flex;
+  margin:20 auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+    .productos1{
+      width: 300px;
+      height: 300px;
+      position: relative;
+      align-content: center;
+      align-items: center;
+      top: 0%;
+      bottom: 0%;
+      right:10%;
+      left: 20%;
+      margin: 5px;
+      display: inline-block;
+      transition: all .2s ease-in-out;
+    }
+
+    .productos1:hover {
+      transform: scale(1.1);
+      }
+
+    .productos2{
+      width: 300px;
+      height: 300px;
+      position: relative;
+      top: 0%;
+      bottom: 0%;
+      right: 30%;
+      left: 28%;
+      margin: 20px;
+      display: inline-block;
+      transition: all .2s ease-in-out;
+    }
+
+    .productos2:hover {
+      transform: scale(1.1);
+      }
+    }
+
+    /*REGISTRO*/
+    div.piepagina {
+    margin: 0px;
+    height: 50px;
+    background-color: black;
+    }
+
+    div.piepagina div.registrate{
+      position: relative;
+      top: -10%;
+      right: -10%;
+      float: left;
+      padding: 7px;
+      font-size: 10px;
+      color: white;
+      text-shadow: 2px 2px 1px black;
+      font-family: 'Dancing Script', cursive;
+    }
+
+     div.piepagina div.mediosdepago{
+       position: relative;
+       top: -10%;
+       left: -10%;
+       float: right;
+      padding: 7px;
+      font-size: 10px;
+      color: white;
+      text-shadow: 2px 2px 1px black;
+      font-family: 'Dancing Script', cursive;
+    }
+
+      /*REGISTRO2*/
+
+      div.pie1{
+        width: 100%;
+        position: relative;
+        right: inherit;
+        float: right;
+        margin: 0px;
+        background-color:black;
+        height: 130px;
+        bottom:20px;
+
+        }
+
+
+      /*BUSQUEDA*/
+
+      body div.box{
+        background-color: white;
+        height: 20px;
+        width:500px;
+        top:10px;
+      }
+
+      div.box{
+        height: 300px;
+        width:300px;
+        color: black;
+        margin: 5px;
+        position: relative;
+        float: left;
+      padding: 7px;
+      top:30px;
+      }
+
+
+      .box{
+        border-color: black;
+        border-radius: 15px;
+        margin: auto;
+        color:black;
+        width: 100px;
+        left: 80px;
+        height: 50px;
+        align-items: left;
+        text-align: left;
+        position: absolute;
+        top:30px;
+
+      }
+      input#search {
+        font-size: 16px;
+        color: black;
+      }
+
+        /*IMAGEN*/
+       div.imagen{
+        position: relative;
+        bottom:20px;
+        top:10px;
+        left: -9%;
+        float: right;
+      padding: 7px;
+      }
